@@ -1,0 +1,65 @@
+.product-info {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers items horizontally */
+  text-align: center; /* Centers text within each item */
+  padding: 20px; /* Adjust padding as needed */
+  font-family: Arial, sans-serif; /* Use a clean font */
+  transform: translate(0%, -100%);
+}
+
+.product-name {
+  font-size: 1.1rem; /* Adjust size for the product name */
+  font-weight: bold;
+  margin-bottom: 5px; /* Add space between name and description */
+}
+
+.product-description {
+  font-size: 0.9rem; /* Smaller size for the description */
+  color: gray; /* Gray color for secondary text */
+  margin-bottom: 5px; /* Space between description and price */
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+}
+.container-product-photo {
+  position: relative;
+  width: 400px; /* Set this to the width of your images */
+  height: auto; /* Adjust as needed */
+  overflow: hidden; /* Ensure no overflow if images are different sizes */
+}
+
+.product-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.front-image {
+  opacity: 1; /* Default visible */
+  z-index: 2;
+}
+
+.back-image {
+  opacity: 0; /* Default hidden */
+  z-index: 1;
+  transform: translate(0%, -100%);
+}
+
+.front-image:hover {
+  opacity: 0; /* Hide front image only on hover */
+}
+
+.front-image:hover + .back-image {
+  opacity: 1; /* Show back image only when front image is hovered */
+}
+.product-mitchel {
+  height: 620px;
+  background-color: $aqua-color;
+}

@@ -1,0 +1,59 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1460px;
+}
+.container-full {
+  width: 1897px;
+}
+.container-narrow {
+  width: 920px;
+}
+.container-photo{
+
+  position: relative;
+  display: inline-block;
+}
+.container-footer{
+  width: 100%;
+  display: flex;
+  width: 1500px;
+  padding: 2rem 0;
+}
+.container-footer-info{
+  width: 400px;
+}
+
+.container-footer-copyright {
+  width: 100%; // Make it span the full width
+  text-align: left;
+  padding: 1rem 0;
+  border-top: 1px solid black; // Optional divider line
+  margin-top: 1rem;
+
+  .footer-bottom {
+    font-size: 0.875rem;
+    color: black;
+
+    .credits {
+      font-size: 0.75rem;
+      color: black;
+    }
+  }
+}
+
+/* Optional: Style adjustments for image dimensions */
+.container-photo img {
+  max-width: 720px; /* Set max-width as needed */
+  height: auto;
+}
+
+.container-product-photo img {
+  position: relative;
+  max-width: 453px;
+  height: auto;
+}

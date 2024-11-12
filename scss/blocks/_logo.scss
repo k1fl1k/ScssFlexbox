@@ -1,0 +1,42 @@
+@import "../base/mixins";
+@import "../base/media-mixins";
+@import "../base/variables";
+
+.logo {
+  @include title-font;
+  font-size: 40px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding-left: 8rem;
+  color: black;
+  text-decoration: none;
+}
+
+.logo__hover{
+    &:hover {
+    color: black;
+    opacity: 1;
+  }
+}
+.logo__wrap {
+  @include no-indent;
+  
+}
+
+.logo__wrap--header{
+  width: 200px;
+  height: 50px;
+}
+
+.logo__sub-wrap--header {
+  width: 450px;
+  height: 50px;
+}
+
+.logo__sub-wrap{
+    padding-right: 60rem;
+}
+
+.logo__wrap--footer {
+  margin-bottom: 12px;
+}

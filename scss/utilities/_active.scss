@@ -1,0 +1,12 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+.active {
+  &:hover {
+    color: gray;
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}

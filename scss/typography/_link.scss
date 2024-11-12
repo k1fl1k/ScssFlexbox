@@ -1,0 +1,15 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+.link {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: gray;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}

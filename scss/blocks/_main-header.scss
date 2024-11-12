@@ -1,0 +1,11 @@
+@import "../base/mixins";
+@import "../base/media-mixins";
+@import "../base/variables";
+
+.main-header {
+  padding-top: 0rem;
+}
+
+.main-header__sub-header{
+  padding-left: 8rem;
+}

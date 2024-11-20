@@ -52,6 +52,7 @@
       position: absolute;
         top: 40%;
         right: 20%;
+        transform: translate(40%, 40%);
         width: 400px;
         height: auto;
 }
@@ -63,7 +64,7 @@
   color: black;
   font-weight: bold;
   background-color: rgba(255, 192, 203, 0.8); /* Semi-transparent pink */
-  padding: 30px;
+  padding: auto;
   text-align: center;
   font-size: 20px;
   width: 30%;
